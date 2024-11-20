@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".TeacherLandingPageActivity">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="244dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/itim"
+        android:text="Dashboard"
+        android:textAlignment="center"
+        android:textColorLink="#FBFBFB"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/nameTitle"
+        android:layout_width="284dp"
+        android:layout_height="47dp"
+        android:fontFamily="@font/itim"
+        android:text="Welcome Teacher!"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="468dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTitle">
+
+        <Button
+            android:id="@+id/btnViewProgress"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#1AC21A"
+            android:fontFamily="@font/itim"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:text="View Student Progress"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:cornerRadius="11dp"
+            app:strokeColor="#262323" />
+
+
+        <Button
+            android:id="@+id/btnManageAssignments"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FDCD09"
+            android:fontFamily="@font/itim"
+            android:text="Manage Assignments"
+            android:textSize="20dp"
+            app:cornerRadius="11dp" />
+
+        <Button
+            android:id="@+id/btnTeachingResources"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FF5722"
+            android:fontFamily="@font/itim"
+            android:text="Access Teaching Resources"
+            android:textSize="20dp"
+            app:cornerRadius="11dp" />
+
+        <Button
+            android:id="@+id/contactAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#AFEB1E24"
+            android:fontFamily="@font/itim"
+            android:text="Contact Admin"
+            android:textSize="20dp"
+            app:cornerRadius="11dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="846dp"
+            android:background="@drawable/mm_bg"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="265dp"
+                    android:layout_height="238dp"
+                    android:layout_marginTop="44dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/fixie" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="310dp"
+                    android:layout_height="340dp"
+                    android:layout_marginEnd="156dp"
+                    android:layout_weight="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/bit" />
+
+                <LinearLayout
+                    android:layout_width="414dp"
+                    android:layout_height="379dp"
+                    android:layout_marginTop="232dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    tools:layout_editor_absoluteX="-2dp">
+
+                    <TextView
+                        android:id="@+id/scoreTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="131dp"
+                        android:background="@drawable/buttonshape"
+                        android:fontFamily="@font/game_font"
+                        android:paddingTop="50dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="40sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="188dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="20dp">
+
+                        <TextView
+                            android:id="@+id/performanceTextView"
+                            android:layout_width="208dp"
+                            android:layout_height="135dp"
+                            android:background="@drawable/buttonshape"
+                            android:fontFamily="@font/game_font"
+                            android:padding="20dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/highScoresTextView"
+                            android:layout_width="208dp"
+                            android:layout_height="135dp"
+                            android:background="@drawable/buttonshape"
+                            android:fontFamily="@font/game_font"
+                            android:padding="20dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

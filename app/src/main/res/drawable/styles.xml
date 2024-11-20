@@ -1,0 +1,11 @@
+<resources>
+    <!-- Custom AlertDialog style -->
+    <style name="CustomAlertDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:background">@drawable/dialog_background</item>
+        <item name="android:textColorPrimary">#FDFCFC</item>
+    </style>
+    <style name="HintStyle">
+        <item name="android:textSize">13sp</item> <!-- This sets the text size for the hint -->
+
+    </style>
+</resources>

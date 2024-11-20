@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgregister"
+    tools:context=".AdminLandingPageActivity">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/all_font"
+        android:text="Welcome Admin"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnManageAccounts"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/all_font"
+                android:textSize="20sp"
+                android:text="Manage User Accounts"
+                android:backgroundTint="@android:color/holo_blue_light" />
+
+            <Button
+                android:id="@+id/btnViewStatistics"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/all_font"
+                android:textSize="20sp"
+                android:text="View System Statistics"
+                android:backgroundTint="@android:color/holo_green_light" />
+
+            <Button
+                android:id="@+id/btnConfigureSettings"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/all_font"
+                android:textSize="20sp"
+                android:text="Configure App Settings"
+                android:backgroundTint="@android:color/holo_orange_light" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:fontFamily="@font/all_font"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
